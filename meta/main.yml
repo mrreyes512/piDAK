@@ -2,7 +2,7 @@ galaxy_info:
   author: Mark Reyes
   description: A role to take a defaulted pi from zero to kubernetes
   license: BSD
-  min_ansible_version: 2.4
+  min_ansible_version: 2.5
   platforms:
     - name: Raspbian
   categories:
@@ -10,7 +10,7 @@ galaxy_info:
     - system
 
   galaxy_tags:
-    - raspberry pi
+    - raspberry_pi
     - docker
     - kubernetes
 
