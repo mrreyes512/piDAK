@@ -1,12 +1,21 @@
-Role Name
+piDAK
 =========
 
-A brief description of the role goes here.
+**Raspberry Pi - Docker - Ansible - Kubernetes**
+A role designed to take a defaulted Raspberry Pi and get Kubernetes installed.
+
+This role will:
+  1. Add new user and install ssh key for access
+  2. Set locale settings for Raspberry Pi and expand the file system
+  3. Upgrade repo listing and Update packages
+  4. Install custom packages
+  5. Install Docker
+  6. Assign Docker to Kubernetes cluster
 
 Requirements
 ------------
 
-Any pre-requisites that may not be covered by Ansible itself or the role should be mentioned here. For instance, if the role uses the EC2 module, it may be a good idea to mention in this section that the boto package is required.
+Prior to executing playbook, the user will have to etch a new image onto the SD card, and join the wifi network. I suggest using [Ethcer](www.etcher.io) to reimage the card.
 
 Role Variables
 --------------
